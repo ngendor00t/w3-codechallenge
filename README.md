@@ -47,7 +47,7 @@ this the file i copied the data from local host.
 
 
 ## author
-Regina wambui
+Regina wambui(https://github.com/ngendor00t)
 
 
 
