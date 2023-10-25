@@ -2,14 +2,14 @@
 document.addEventListener("DOMContentLoaded", function (){
     getMovies()
 });
-
 function getMovies(){
-    fetch(http://localhost:3000/films)
-    .then(res => res.json())
-    .then(data => {
-        displayMovieDetails(data)
-    })
-}
+        fetch("https://my-json-server.typicode.com/ngendor00t/w3-codechallenge/films")
+
+        .then (response =>response.json())
+        .then (data=> {
+            displayMovieDetails(data)
+            console.log(data)})
+        }
 //this function creates a list of all the films based on their title. 
 function displayMovieDetails(data){
     for (let details of data){
@@ -27,7 +27,7 @@ function displayMovieDetails(data){
 
 function displayFilmDetails(details){
     let purchaseTickets = document.getElementById("buyTicket");
-    purchaseTickets.innerHTML =`
+    purchaseTicket.innerHTML =`
     <ul id="films">
       <img src="${details.poster}">
       <p>${details.title}</p>
